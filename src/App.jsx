@@ -2,6 +2,7 @@
 import ContactForm from "./components/ContactForm";
 import Counter from "./components/Counter";
 import Input from "./components/Input"
+import LightSwitch from "./components/LightSwitch";
 
 import ProductList from "./components/ProductList";
 
@@ -25,6 +26,9 @@ function App() {
       </div>
 
       <Input />
+
+      <LightSwitch />
+     
     </>
   );
 }
