@@ -1,4 +1,9 @@
+import { useState } from "react";
+
 function BookingForm() {
+    const [fullName, setfullName] = useState("")
+    const [email, setemail] = useState("")
+
     return(
         <div className="flex flex-col gap-4  max-w-md">
             <h2 className="font-bold text-2xl">Registrtion</h2>
@@ -7,11 +12,13 @@ function BookingForm() {
             >
                 <input type="text"
                 placeholder="Enter your full name"
+                value={fullName}
                  />
 
 
                  <input type="email"
                  placeholder="ex: john@gmail.com"
+                 value={email}
                   />
             </form>
         </div>
