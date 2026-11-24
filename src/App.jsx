@@ -1,4 +1,6 @@
 
+
+import Menu from "./components/Menu";
 import ContactForm from "./components/ContactForm";
 import Counter from "./components/Counter";
 import Input from "./components/Input"
@@ -8,11 +10,16 @@ import ProductList from "./components/ProductList";
 
 import TransactionList from "./components/TransactionList";
 import WelcomeMessage from "./components/WelcomeMessage";
+import BookingForm from "./components/BookingForm";
+
 
 
 function App() {
   return (
     <>
+    <Menu />
+    <BookingForm />
+  
       <WelcomeMessage />
       <TransactionList />
       <ContactForm />
@@ -28,6 +35,8 @@ function App() {
       <Input />
 
       <LightSwitch />
+      
+
      
     </>
   );
