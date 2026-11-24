@@ -3,6 +3,11 @@ import { useState } from "react";
 function BookingForm() {
     const [fullName, setfullName] = useState("")
     const [email, setemail] = useState("")
+    const [password, setpassword] = useState("")
+
+    function handleChange(event) {
+        set
+    }
 
     return(
         <div className="flex flex-col gap-4  max-w-md">
@@ -19,6 +24,12 @@ function BookingForm() {
                  <input type="email"
                  placeholder="ex: john@gmail.com"
                  value={email}
+                  />
+
+                  <input type="password" 
+                  placeholder="Enter your password"
+                  value={password}
+
                   />
             </form>
         </div>
