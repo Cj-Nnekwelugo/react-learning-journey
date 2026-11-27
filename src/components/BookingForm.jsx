@@ -1,39 +1,47 @@
 import { useState } from "react";
 
 function BookingForm() {
-    const [fullName, setfullName] = useState("")
-    const [email, setemail] = useState("")
-    const [password, setpassword] = useState("")
+    const [fullName, setFullName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
-    function handleChange(event) {
-        set
+    function handleChange(setFn, value) {
+        setFn(value);
     }
 
-    return(
-        <div className="flex flex-col gap-4  max-w-md">
-            <h2 className="font-bold text-2xl">Registrtion</h2>
+    return (
+        <div className="flex flex-col gap-4 w-full max-w-md">
+            <h2 className="font-bold text-3xl">Registration Form</h2>
 
-            <form className="border flex flex-col py-10 px-6 rounded-3xl shadow-xl gap-6"
-            >
-                <input type="text"
-                placeholder="Enter your full name"
-                value={fullName}
+            <form className="border py-10 px-6 rounded-3xl shadow-xl flex flex-col gap-4">
+                <input 
+                    type="text" 
+                    placeholder="Enter your full name" 
+                    className="input"
+                    value={fullName}
+                    onChange={(e) => handleChange(setFullName, e.target.value)}
+                />
+
+                <input 
+                    type="email" 
+                    placeholder="Enter your email"
+                    className="input"
+                    value={email}
+                    onChange={(e) => handleChange(setEmail, e.target.value)}
+                />
+
+                <input type="password"
+                placeholder="enter your pin"
+                className="input"
+                value={password}
+                 onChange={(e) => handleChange(setPassword, e.target.value)}
+                
                  />
-
-
-                 <input type="email"
-                 placeholder="ex: john@gmail.com"
-                 value={email}
-                  />
-
-                  <input type="password" 
-                  placeholder="Enter your password"
-                  value={password}
-
-                  />
             </form>
+
+            
         </div>
     )
-};
+}
 
 export default BookingForm;
