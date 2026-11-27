@@ -1,8 +1,10 @@
 
 
 import Menu from "./components/Menu";
+
 import ContactForm from "./components/ContactForm";
 import Counter from "./components/Counter";
+import Banner from "./components/Banner";
 import Input from "./components/Input"
 import LightSwitch from "./components/LightSwitch";
 
@@ -20,6 +22,8 @@ function App() {
     <Menu />
     <BookingForm />
     <CourseForm />
+    <Banner />
+
 
   
       <WelcomeMessage />
