@@ -7,7 +7,7 @@ import Input from "./components/Input"
 import LightSwitch from "./components/LightSwitch";
 
 import ProductList from "./components/ProductList";
-
+import CourseForm from "./components/CourseForm";
 import TransactionList from "./components/TransactionList";
 import WelcomeMessage from "./components/WelcomeMessage";
 import BookingForm from "./components/BookingForm";
@@ -19,6 +19,8 @@ function App() {
     <>
     <Menu />
     <BookingForm />
+    <CourseForm />
+
   
       <WelcomeMessage />
       <TransactionList />
