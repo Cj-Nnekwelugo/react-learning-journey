@@ -1,7 +1,7 @@
 
 
 import Menu from "./components/Menu";
-
+import Features from "./components/Features";
 import ContactForm from "./components/ContactForm";
 import Counter from "./components/Counter";
 import Banner from "./components/Banner";
@@ -23,6 +23,7 @@ function App() {
     <BookingForm />
     <CourseForm />
     <Banner />
+    <Features />
 
 
   
