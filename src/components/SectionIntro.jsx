@@ -1,8 +1,8 @@
 function SectionIntro({title, subTitle}) {
     return(
-        <div>
-            <h2>{title}</h2>
-            <p>{subTitle}</p>
+        <div className="text-2xl  flex flex-col bg-amber-200 rounded">
+            <h2 className="text-blue-500 font-bold text-center">{title}</h2>
+            <p className="text-red-300">{subTitle}</p>
         </div>
     )
 }
