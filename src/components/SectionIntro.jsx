@@ -1,8 +1,8 @@
 function SectionIntro({title, subTitle}) {
     return(
         <div>
-            <h2></h2>
-            <p></p>
+            <h2>{title}</h2>
+            <p>{subTitle}</p>
         </div>
     )
 }
